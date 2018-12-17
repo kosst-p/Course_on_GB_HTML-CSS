@@ -9,10 +9,15 @@ background: #f8f8f8;
     color      : rgba(35, 134, 35, 0.877);
     font-size  : 25px;
     font-family: Merc, sans-serif;
+    
 }
 .menuMarkers{
     list-style-type: none;
 }
+.menuLink:hover{
+    color: rgb(231, 103, 17);
+}
+
 .headerCat, .dogHeader{
     color      : black;
     font-size  : 18px;
