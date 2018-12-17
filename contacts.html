@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <h1>Тридцать восемь попугаев</h1>
+    <ul class="menuMarkers">
+        <li><a href="index.html" class="menuLink">Главная страница</a></li>
+        <li><a href="catalog.html" class="menuLink">Каталог</a></li>
+        <li><a href="contacts.html" class="menuLink">Контакты</a></li>
+    </ul>
+    <hr>
+
+    <form action="contacts.html" method="POST">
+        <fieldset>
+            <legend>Обратная связь</legend>
+            <label for="userName">Ваше имя: </label>
+            <input type="text" id="userName" placeholder="Введите имя"> <br>
+            <label for="userEmail">Ваш e-mail: </label>
+            <input type="text" id="userEmail" placeholder="Введите e-mail"> <br>
+            <label for="userOrder">Номер Вашего заказа: </label>
+            <input type="text" id="userOrder" placeholder="Введите номер заказа"> <br>
+            <label>Ближайший к Вам город: </label>
+            <select id="userCity">
+                <option selected disabled>Выберите город</option>
+                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                <option value="Новочеркасск">Новочеркасск</option>
+                <option value="Шахты">Шахты</option>
+                <option value="Красный Сулин">Красный Сулин</option>
+            </select> <br>
+            <label>Тема: </label>
+            <select id="userTheme">
+                <option selected disabled>.....</option>
+                <option value="Доставка">Доставка</option>
+                <option value="Коммерческие вопросы">Коммерческие вопросы</option>
+                <option value="Жалобы и предложения">Жалобы и предложения</option>
+            </select> <br>
+            <label for="userQuestion">Ваш вопрос: </label> <br>
+            <textarea id="userQuestion" cols="39" rows="10"></textarea> <br>
+            <input class="button" type="submit" value="Отправить">
+            <input class="button" type="reset" value="Очистить">
+        </fieldset>
+    </form>
+    <h3>Адреса магазинов</h3>
+    <p>
+        Адрес: г.Ростов-на-Дону, пр.Шолохова 300 <br>
+        Время работы: с 09:00 до 18:30 <br>
+        Телефон: +7 999-999-99-99 <br>
+        e-mail: tdrostov@yandex.ru
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A248254dc0bf41ab91e48afc53bdec15a2bcad412cc582eac9687bb2f8021c162&amp;width=320&amp;height=278&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </p>
+    <p>
+        Адрес: г.Новочеркасск, ул.Московская 150 <br>
+        Время работы: с 08:00 до 17:00 <br>
+        Телефон: +7 999-999-99-99 <br>
+        e-mail: tdnovoch@yandex.ru
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A02eafd74f44352ad4bcf9206cdb10e34012d2ec4a333169771510891585a2470&amp;width=320&amp;height=278&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </p>
+    <p>
+        Адрес: г.Шахты, ул.Обороны 100 <br>
+        Время работы: с 09:00 до 18:00 <br>
+        Телефон: +7 999-999-99-99 <br>
+        e-mail: tdshahty@yandex.ru
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c8539b4df9c53b0cad3b11da922b812a1ea143faf7a964d652f7bfabc868a4a&amp;width=320&amp;height=278&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </p>
+    <p>
+        Адрес: г.Красный Сулин, ул.Народная 50 <br>
+        Время работы: с 09:00 до 18:00 <br>
+        Телефон: +7 999-999-99-99 <br>
+        e-mail: tdksulin@yandex.ru
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb05f456fb4bc569b3a0077982ecf202c15d15aa8c036610bda48fed7c1bebe4&amp;width=320&amp;height=278&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </p>
+    <hr>
+    <p>&copy; "Все права защищены" </p>
+</body>
+
+</html>
