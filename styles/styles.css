@@ -17,7 +17,6 @@ background: #f8f8f8;
 .menuLink:hover{
     color: rgb(231, 103, 17);
 }
-
 .headerCat, .dogHeader{
     color      : black;
     font-size  : 18px;
@@ -38,7 +37,7 @@ background: #f8f8f8;
     text-align : left;
 }
 img[alt="Logo1"]{
-    border: 3px double rgba(35, 134, 35, 0.877);
+    border: 10px double rgba(35, 134, 35, 0.877);
 }
 .catList{
     list-style: url(../images/catList.png);
@@ -51,11 +50,13 @@ img[alt="Logo1"]{
     font-style: italic;
 }
 input#userName, input#userEmail, input#userOrder, #userQuestion{
-    background: rgb(65, 64, 64);
-    color     : #e8e8e8;
-    font-size : 17px;
-    border    : none;
-    outline   : none;
+    background    : rgb(65, 64, 64);
+    color         : #e8e8e8;
+    font-size     : 17px;
+    border        : none;
+    outline       : none;
+    text-transform: capitalize;
+    box-shadow    : 0 0 10px yellow;
 }
 #userName{
     margin-left: 138px;
@@ -94,11 +95,46 @@ label{
     font-size: 17px;
 }
 .button{
+    margin-top   : 10px;
     width        : 100px;
     height       : 30px;
     background   : rgb(177, 136, 136);
     color        : #221a1a;
     cursor       : pointer;
     border-radius: 5px;
-    box-shadow   : inset 0 2px 2px #ccc;
+    box-shadow   : 0 0 5px yellow;
+}
+#userName:focus, #userEmail:focus, #userOrder:focus, #userQuestion:focus{
+    background: rgb(208, 230, 11);
+    color     : blue;
+}
+#userCity:focus, #userTheme:focus{
+    background: rgb(208, 230, 11);
+    color     : blue;
+}
+img[alt="Logo1"]:hover{
+    border-color: transparent;
+}
+.briefDescription:first-letter, .fullDescription::first-letter{
+    color      : rgb(207, 89, 10) ;
+    font-size  : 50px;
+    font-family: Merc, sans-serif;
+}
+.diet{
+    width          : 100%;
+    text-align     : center;
+    background     : rgba(144, 210, 230, 0.842);
+    font-size      : 20px;
+    color          : rgb(161, 56, 24);
+    border-collapse: collapse;
+}
+.diet th{
+    background: rgb(217, 255, 0);
+    color     : blue;
+    font-size : 20px;
+    font-size : 30px;
+    height    : 60px;
+}
+.diet td, th{
+    border: 2px solid rgb(153, 0, 255);
 }
