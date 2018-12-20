@@ -2,21 +2,101 @@
     font-family: 'Merc';
     src        : url('../fonts/Merc.otf')
 }
+
 body{
 background: #f8f8f8;
 }
+
+.container{
+    width : 1000px;
+    margin: 0 auto;
+}
+
+.header{
+    height    : 150px;
+    position  : relative;
+    background: white;
+}
+
+.header img{
+margin: 0px 0px 0px 30px;
+}
+
+.shopName{
+    position : absolute;
+    left     : 400px;
+    top      : 100px;
+    color    : rgb(27, 118, 223);
+    font-size: 30px;
+    /* font-family: ...; выбрать шрифт */
+}
+
+.menuMarkers{
+    text-align: right;
+    float     : right;
+    margin    : 0px 0px;
+}
+
+.menuMarkers li{
+    display: inline-block;
+    padding: 10px;
+} 
+
 .menuLink{
     color      : rgba(35, 134, 35, 0.877);
-    font-size  : 25px;
+    font-size  : 20px;
     font-family: Merc, sans-serif;
     
 }
-.menuMarkers{
-    list-style-type: none;
-}
+
 .menuLink:hover{
     color: rgb(231, 103, 17);
 }
+
+.footer{
+    background: white;
+    height    : 150px;
+    text-align: right;
+    padding   : 20px 20px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .headerCat, .dogHeader{
     color      : black;
     font-size  : 18px;
@@ -131,10 +211,13 @@ img[alt="Logo1"]:hover{
 .diet th{
     background: rgb(217, 255, 0);
     color     : blue;
-    font-size : 20px;
     font-size : 30px;
     height    : 60px;
 }
 .diet td, th{
     border: 2px solid rgb(153, 0, 255);
 }
+
+
+
+
