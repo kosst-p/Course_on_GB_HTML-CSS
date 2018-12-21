@@ -13,22 +13,23 @@ background: #f8f8f8;
 }
 
 .header{
+    display   : block;
     height    : 150px;
     position  : relative;
-    background: white;
+    background: url(../images/headerPicture.png);
 }
 
 .header img{
-margin: 0px 0px 0px 30px;
+margin: 0px 0px 0px 20px;
 }
 
 .shopName{
     position : absolute;
-    left     : 400px;
-    top      : 100px;
-    color    : rgb(27, 118, 223);
-    font-size: 30px;
-    /* font-family: ...; выбрать шрифт */
+    left     : 200px;
+    top      : 50px;
+    color    : rgb(27, 177, 223);
+    font-size: 25px;
+
 }
 
 .menuMarkers{
@@ -60,54 +61,33 @@ margin: 0px 0px 0px 30px;
     padding   : 20px 20px 0px 0px;
 }
 
+.descriptionCat{
+    width      : 678px;
+    float      : left;
+    margin-left: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.imageCat{
+    float: left;
+}
+.imageDog{
+    float: left;
+}
 
 .headerCat, .dogHeader{
     color      : black;
     font-size  : 18px;
     font-weight: 400;
     background : #eaeaea;
+    clear      : both;
 }
+
 .briefDescription{
     color      : #707070;
     font-size  : 14px;
     font-style : italic;
     line-height: 16px;
+
 }
 .fullDescription{
     color      : #484343;
@@ -128,7 +108,9 @@ img[alt="Logo1"]{
     list-style: url(../images/dogList.png);
     color     : rgb(59, 99, 59);
     font-style: italic;
-}
+} 
+
+
 input#userName, input#userEmail, input#userOrder, #userQuestion{
     background    : rgb(65, 64, 64);
     color         : #e8e8e8;
@@ -218,6 +200,66 @@ img[alt="Logo1"]:hover{
     border: 2px solid rgb(153, 0, 255);
 }
 
+.catalogCatsProducts .catalogDogsProducts{
+    width   : 1000px;
+    overflow: hidden;            /* без этого свойста контейнер не хотел расширяться в высоту */
+    margin  : 20px auto 0 auto;
+}
 
+.productUnitCat {
+    width       : 180px;
+    height      : 340px;
+    border      : 2px dotted rgb(88, 44, 3);
+    float       : left;
+    margin-right: 6%;
+    margin-top  : 20px;
+}
 
+.productUnitCat:nth-child(-n+4){
+    margin-top: 0;
+}
+.productUnitCat:nth-child(4){
+    margin-right: 0;
+}
 
+.forDog{
+    clear: both;}
+
+    .productUnitDog {
+        width        : 180px;
+        height       : 340px;
+        border       : 2px dotted rgb(88, 44, 3);
+        float        : left;
+        margin-right : 6%;
+        margin-top   : 20px;
+        margin-bottom: 5px;
+    }
+    
+
+        /* пришлось сделать hr, как блок, чтобы он не улетал на товары вверх*/
+#hrclear{ 
+    display: block;
+    clear  : both;
+}
+
+.buyProduct{
+    float          : right;
+    margin-top     : 10px;
+    width          : 100px;
+    height         : 30px;
+    background     : rgb(177, 136, 136);
+    color          : #221a1a;
+    cursor         : pointer;
+    border-radius  : 5px;
+    box-shadow     : 0 0 5px yellow;
+    text-align     : center;
+    text-decoration: none;
+    font-family    : Merc, sans-serif;
+}
+
+.buyProduct:hover{
+    background: rgb(110, 84, 84);
+}
+.buyProduct:active{
+    background: rgb(16, 95, 214);
+}
